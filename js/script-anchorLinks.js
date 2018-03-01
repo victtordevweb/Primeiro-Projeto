@@ -20,7 +20,7 @@ $(document).ready(function(){
         var scrollPosition = $(this).scrollTop();
 
         scrollLink.each(function(){
-            var sectionOffset = $(this.hash).offset().top - 40;
+            var sectionOffset = $(this.hash).offset().top - 169;
 
  
 

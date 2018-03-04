@@ -1,4 +1,6 @@
 $(document).ready(function(){
+	if(screen.width >= 767){
+
 	 $(window).scroll(function(){
 
 	        if ($(this).scrollTop() > 50) {
@@ -8,8 +10,9 @@ $(document).ready(function(){
 	        	$('body').removeClass('fixedTop');
 	            $('#voltar-ao-topo').fadeOut(300);
 	        }
-	    });
-
+		});
+		
+	}
 		var _topZero = $('html, body');
 
 		var _returnTop = $('.logo-cabecalho > div > img, #voltar-ao-topo');

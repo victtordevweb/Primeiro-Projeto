@@ -6,19 +6,19 @@
 @media screen and (max-width: 767px) {
     /*/=============================== Conteudo Menu Hamburguer ====================================/*/
     .hamburger {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        margin: 40px auto;
+        -webkit-transform: scale(0.75);
+        transform: scale(0.75);
         position: relative;
+        top: -11px;
         display: block;
         width: 68px;
         height: 68px;
-        background: #973BE8;
         -webkit-touch-callout: none;
         -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
+        overflow: hidden;
       }
       
       .burger-main {
@@ -38,19 +38,19 @@
         position: absolute;
         display: block;
         height: 4px;
-        width: 36px;
+        width: 45px;
         border-radius: 2px;
         background: #fff;
       }
       
       .top {
         top: 0;
-        transform-origin: 34px 2px;
+        transform-origin: 36px 6px;
       }
       
       .bot {
         bottom: 0;
-        transform-origin: 34px 2px;
+        transform-origin: 39px -3px;
       }
       
       .mid {
@@ -393,19 +393,37 @@
         }
       }
     /*/ =========================== Encerra Conteudo Menu Hamburguer ===========================/*/
+    #cabecalho .barra-mobile {
+        z-index: 11;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding: 22px 2px;
+    }
+    /*/ menu cabecalho /*/
+    #cabecalho .menu-cb.mobile {
+        display: inline-block;
+    }
+    #cabecalho .menu-cb.mobile li {
+        float: none;
+    }
+    #cabecalho .menu-cb.mobile li a {
+        font-size: 19px;
+        margin-bottom: 14px;
+    }
     #cabecalho {
         padding-bottom: 150px;
         height: auto !important;
+    }
+    #cabecalho .conteudo.menu {
+        margin-top: 75px;
     }
     #cabecalho:after {
         transform: scale(0.9) rotate(5deg) !Important;
         background-size: 160%;
         bottom: -62px;
     }
-    #cabecalho .conteudo.menu {
-        position: static;
-        padding: 0;
-    }
+    
     #cabecalho .col-xs-12 {
         float: none;
     }
@@ -418,9 +436,9 @@
         width: 140px !important;
         font-size: 15px !important;
     }
-    /*/ logo cabecalho /*/
-    #cabecalho .logo-cabecalho {
-        text-align: center;
+    /*/ logo mobile /*/
+    #cabecalho .logo-mobile img {
+        height: 50px;
     }
 
 	/*/ Cronometro /*/

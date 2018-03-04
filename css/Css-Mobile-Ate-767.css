@@ -1,6 +1,20 @@
-@media screen and (max-width: 501px) {
+@media screen and (max-width: 650px) {
     #cabecalho .cronometro .countdown.styled > div:before {
         display: none;
+    }
+}
+@media screen and (max-width: 767px) and (min-width: 651px) {
+    #cabecalho .cronometro .countdown.styled > div:not(:first-child) > span {
+        transform: translateX(48px);
+    }
+}
+@media screen and (max-width: 1199px) and (min-width: 651px){
+    #cabecalho .cronometro .countdown.styled > div {
+        font-size: 50px !Important;
+        display: inline-block !important;
+    }
+    #cabecalho .cronometro .countdown.styled > div > span {
+        font-size: 14px !important;
     }
 }
 @media screen and (max-width: 767px) {
@@ -411,6 +425,9 @@
         font-size: 19px;
         margin-bottom: 14px;
     }
+    #cabecalho nav.menu-cb.mobile > ul {
+        float: left;
+    }
     #cabecalho {
         padding-bottom: 150px;
         height: auto !important;
@@ -420,8 +437,8 @@
     }
     #cabecalho:after {
         transform: scale(0.9) rotate(5deg) !Important;
-        background-size: 160%;
-        bottom: -62px;
+        background-size: 490px;
+        bottom: -70px;
     }
     
     #cabecalho .col-xs-12 {

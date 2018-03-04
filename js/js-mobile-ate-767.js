@@ -20,5 +20,7 @@ $('document').ready(function () {
     /*/ Encerra Script Menu Hamburguer /*/
 
 
+ } else {
+     
  }
 });

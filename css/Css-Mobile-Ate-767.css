@@ -1,3 +1,25 @@
-@media screen (max-width: 767px) {
-	
+@media screen and (max-width: 767px) {
+    #cabecalho .col-xs-12 {
+        float: none;
+    }
+	/*/ Barra Login / Cadastro /*/
+    header#cabecalho .row-fluid.entrar a {
+        width: 140px !important;
+        margin: 0 !Important;
+    }
+
+
+	/*/ Cronometro /*/
+#cabecalho .cronometro .countdown.styled > div {
+   	font-size: 67px;
+    margin: 20px 0;
+    display: block;
+}
+#cabecalho .cronometro .countdown.styled > div > span {
+    font-size: 17px;
+    display: block;
+    top: -15px;
+    
+}
+
 }

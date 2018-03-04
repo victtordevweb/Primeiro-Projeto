@@ -469,5 +469,23 @@
     top: -10px;
     left: 0 !Important;
 }
+#cabecalho .cronometro {
+  margin-top: 0px;
+}
 
+/*/ ================= // Body Ajustes Width Mobile // ================== /*/
+.eventos-passados .row-fluid > div img {
+    width: 100% !important;
+}
+.elites .icon img#img-Elite {
+    display: none;
+}
+
+#cabecalho .conteudo.menu {
+  position: static !important;
+  margin-top: 35px;
+}
+header#cabecalho .row-fluid.entrar {
+  padding: 0;
+}
 }

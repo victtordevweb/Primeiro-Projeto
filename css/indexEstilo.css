@@ -134,16 +134,17 @@ section#corpo {
     font-size: 50px;
     font-weight: 900;
 }
-
-.fitRotation {
-    transform: rotate(5deg);
-}
-
-.withRotation {
-    background: #fff;
-    transform: rotate(-5deg);
-    margin: -5% -7% 0 -7%;
-        padding-top: 5%;
+@media screen and (min-width: 768) {
+    .fitRotation {
+        transform: rotate(5deg);
+    }
+    
+    .withRotation {
+        background: #fff;
+        transform: rotate(-5deg);
+        margin: -5% -7% 0 -7%;
+            padding-top: 5%;
+    }
 }
 
 #corpo .row-fluid.sign {

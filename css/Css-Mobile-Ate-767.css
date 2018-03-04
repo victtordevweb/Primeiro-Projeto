@@ -4,8 +4,8 @@
     }
 	/*/ Barra Login / Cadastro /*/
     header#cabecalho .row-fluid.entrar a {
-        width: 140px !important;
-        margin: 0 !Important;
+        width: 140px;
+        margin: 0;
     }
 
 

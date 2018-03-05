@@ -486,11 +486,11 @@
   margin-top: 35px;
 }
 header#cabecalho .row-fluid.entrar {
+  /*padding: 0;*/
+}
+.grid-speakers div {
   padding: 0;
 }
-/*.grid-speakers div {
-  padding: 0;
-}*/
 
 
 }

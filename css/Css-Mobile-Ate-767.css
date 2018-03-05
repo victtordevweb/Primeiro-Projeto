@@ -24,6 +24,7 @@
         transform: scale(0.75);
         position: relative;
         top: -11px;
+        left: 13px;
         display: block;
         width: 68px;
         height: 68px;
@@ -412,8 +413,14 @@
         position: fixed;
         top: 0;
         width: 100%;
-        padding: 22px 2px;
+        padding: 25px 2px;
+        transition: all 0.5s;
     }
+    .back-mobile #cabecalho .barra-mobile {
+      background: rgba(12, 12, 12, 0.98);
+      padding: 22px 0px 9px 0px;
+    }
+
     /*/ menu cabecalho /*/
     #cabecalho .menu-cb.mobile {
         display: inline-block;
@@ -444,6 +451,7 @@
     #cabecalho .col-xs-12 {
         float: none;
     }
+
 	/*/ Barra Login / Cadastro /*/
 
     #cabecalho .row-fluid.entrar a {
@@ -456,6 +464,9 @@
     /*/ logo mobile /*/
     #cabecalho .logo-mobile img {
         height: 50px;
+    }
+    #cabecalho .logo-mobile {
+      padding-left:8px;
     }
 
 	/*/ Cronometro /*/
@@ -486,7 +497,7 @@
   margin-top: 35px;
 }
 header#cabecalho .row-fluid.entrar {
-  /*padding: 0;*/
+  padding: 0px 10px;
 }
 .grid-speakers div {
   padding: 0;

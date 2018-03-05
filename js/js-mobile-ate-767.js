@@ -5,7 +5,8 @@ $('document').ready(function () {
     var sldMenu = $('#cabecalho .menu-cb.mobile');
    sldMenu.hide();
     $('.hamburger').click(function () {
-       $('body').toggleClass('menu-mobile');
+       $('body').toggleClass('menu-mobile').addClass('back-mobile');
+
         sldMenu.slideToggle(700);
       if (Closed == true) {
         $(this).removeClass('open');
@@ -19,6 +20,22 @@ $('document').ready(function () {
     });
     /*/ Encerra Script Menu Hamburguer /*/
 
+    $(window).scroll(function(){
+      if ($(this).scrollTop() > 30) {
+        $('body').addClass('back-mobile');
+          
+      } else {
+        $('body').removeClass('back-mobile');
+      }
+    });
 
+    $(window).scroll(function(){
+    if ($(this).scrollTop() < 1) {
+      sldMenu.slideUp(500);
+        $('.hamburger').addClass('closed').removeClass('open');
+    }else {
+
+    }
+  });
 /* }*/
 });

@@ -7,7 +7,7 @@ $(document).ready(function(){
 
     scrollLink.click(function(e){
         e.preventDefault();
-
+        $('#cabecalho nav.menu-cb > ul .running-line-mobile').removeClass('off');
         $('body, html').animate({
 
             scrollTop: $(this.hash).offset().top
@@ -29,7 +29,7 @@ $(document).ready(function(){
 
                 $(this).parent().addClass('activeAnchor');
                 $(this).parent().siblings().removeClass('activeAnchor');
-
+       if(scrollPosition > 768 ){         
             var LineWidth = $(this).width();
             var LineLeft = $(this).position().left;
             var runLine = $('#cabecalho nav.menu-cb > ul .running-line');
@@ -37,7 +37,42 @@ $(document).ready(function(){
                       width: LineWidth,
                       left: LineLeft
                         }, 001);
-                    }
+                   }
+
+                  /* if(scrollPosition < 767 ){  */       
+                
+                        if($('#cabecalho nav.menu-cb.mobile > ul > li').hasClass('um activeAnchor')){
+                            $('#cabecalho nav.menu-cb > ul .running-line-mobile').removeClass('off');
+                            $('#cabecalho nav.menu-cb > ul .running-line-mobile').css('top','30px');
+                        }
+                        if($('#cabecalho nav.menu-cb.mobile > ul > li').hasClass('dois activeAnchor')){
+                            $('#cabecalho nav.menu-cb > ul .running-line-mobile').css('top','71px');
+                        }
+                        if($('#cabecalho nav.menu-cb.mobile > ul > li').hasClass('tres activeAnchor')){
+                            $('#cabecalho nav.menu-cb > ul .running-line-mobile').css('top','111px');
+                        }
+                        if($('#cabecalho nav.menu-cb.mobile > ul > li').hasClass('quatro activeAnchor')){
+                            $('#cabecalho nav.menu-cb > ul .running-line-mobile').css('top','152px');
+                        }
+                        if($('#cabecalho nav.menu-cb.mobile > ul > li').hasClass('quatro activeAnchor')){
+                            $('#cabecalho nav.menu-cb > ul .running-line-mobile').css('top','152px');
+                        }
+                        if($('#cabecalho nav.menu-cb.mobile > ul > li').hasClass('cinco activeAnchor')){
+                            $('#cabecalho nav.menu-cb > ul .running-line-mobile').css('top','194px');
+                        }
+                    
+
+                       /*    }*/
+                        
+            }
+
+ 
+    
+                
+                
+            
+            
+
         });
 
         if ($(this).scrollTop() <= 1) {

@@ -1,29 +1,25 @@
 $('document').ready(function () {
-  /*  if(screen.width <= 767) {*/
+    if(screen.width <= 767) {
+      $('#cabecalho nav.menu-cb > ul .running-line-mobile').addClass('off');
     /*/ =========== Script Manu Hamburguer /*/
-    var Closed = false;
+ 
     var sldMenu = $('#cabecalho .menu-cb.mobile');
-   sldMenu.hide();
     $('.hamburger').click(function () {
        $('body').toggleClass('menu-mobile').addClass('back-mobile');
-
         sldMenu.slideToggle(700);
-      if (Closed == true) {
-        $(this).removeClass('open');
-        $(this).addClass('closed');
-        Closed = false;
+      if ( $(this).hasClass('closed') ) {
+        $(this).addClass('open').removeClass('closed');
       } else {               
-        $(this).removeClass('closed');
-        $(this).addClass('open');
-        Closed = true;
+        $(this).addClass('closed').removeClass('open');
+        
       }
     });
-    /*/ Encerra Script Menu Hamburguer /*/
 
+    /*/ Encerra Script Menu Hamburguer /*/
     $(window).scroll(function(){
-      if ($(this).scrollTop() > 30) {
-        $('body').addClass('back-mobile');
-          
+      if ($(this).scrollTop() > 20) {
+
+        $('body').addClass('back-mobile');        
       } else {
         $('body').removeClass('back-mobile');
       }
@@ -31,11 +27,24 @@ $('document').ready(function () {
 
     $(window).scroll(function(){
     if ($(this).scrollTop() < 1) {
+      $('#cabecalho nav.menu-cb > ul .running-line-mobile').addClass('off');
       sldMenu.slideUp(500);
         $('.hamburger').addClass('closed').removeClass('open');
     }else {
 
     }
   });
-/* }*/
+
+ /*   $('#cabecalho nav.menu-cb > ul > li').mouseover(function(){
+	var LineLeft = $(this).position().top;
+	$('#cabecalho nav.menu-cb > ul .running-line-mobile').animate({
+		top: LineLeft
+	}, 010);	
+			
+    });
+
+        */
+
+
+ }
 });

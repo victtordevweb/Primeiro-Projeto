@@ -17,6 +17,33 @@
         font-size: 14px !important;
     }
 }
+@media screen and (max-width: 1199px) and (min-width: 768px){
+  #cabecalho .logo-cabecalho.hidden-xs img {
+    height: 60px;
+  }
+  #cabecalho nav.menu-cb > ul > li {
+    margin-left: 25px;
+  }
+  #cabecalho nav.menu-cb > ul > li > a {
+    font-weight: 400;
+    font-size: 12px;
+
+  }
+  #cabecalho .menu-cabecalho.hidden-xs {
+    padding-left: 0;
+    padding-right: 3px;
+  }
+  #cabecalho .cronometro .countdown.styled {
+    border-radius: 22px;
+    padding: 30px 0px 11px 0px;
+}
+#cabecalho .cronometro .countdown.styled > div > span {
+  top: -9px;
+}
+#cabecalho .cronometro .countdown.styled > div:not(:first-child) > span {
+  left: 49px !important;
+}
+}
 @media screen and (max-width: 767px) {
     /*/=============================== Conteudo Menu Hamburguer ====================================/*/
     .hamburger {
@@ -464,7 +491,7 @@
       width: 2px;
       height: 19px;
       background: #82b541;
-      top: 1px;
+      top: 23px;
       z-index: 10;
       transition:all 0.4s;
       display: block !important;

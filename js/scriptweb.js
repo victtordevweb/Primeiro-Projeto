@@ -15,7 +15,7 @@ $(document).ready(function(){
 	}
 		var _topZero = $('html, body');
 
-		var _returnTop = $('.logo-cabecalho > div > img, #voltar-ao-topo');
+		var _returnTop = $('.logo-cabecalho > div > img, #voltar-ao-topo, #cabecalho .logo-mobile img');
 
 		_returnTop.click(function(){
 		_topZero.animate({scrollTop:0}, 1500); //slow, medium, fast 

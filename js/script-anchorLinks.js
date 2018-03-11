@@ -43,22 +43,22 @@ $(document).ready(function(){
                 
                         if($('#cabecalho nav.menu-cb.mobile > ul > li').hasClass('um activeAnchor')){
                             $('#cabecalho nav.menu-cb > ul .running-line-mobile').removeClass('off');
-                            $('#cabecalho nav.menu-cb > ul .running-line-mobile').css('top','30px');
+                            $('#cabecalho nav.menu-cb > ul .running-line-mobile').css('top','14px');
                         }
                         if($('#cabecalho nav.menu-cb.mobile > ul > li').hasClass('dois activeAnchor')){
-                            $('#cabecalho nav.menu-cb > ul .running-line-mobile').css('top','71px');
+                            $('#cabecalho nav.menu-cb > ul .running-line-mobile').css('top','55px');
                         }
                         if($('#cabecalho nav.menu-cb.mobile > ul > li').hasClass('tres activeAnchor')){
-                            $('#cabecalho nav.menu-cb > ul .running-line-mobile').css('top','111px');
+                            $('#cabecalho nav.menu-cb > ul .running-line-mobile').css('top','96px');
                         }
                         if($('#cabecalho nav.menu-cb.mobile > ul > li').hasClass('quatro activeAnchor')){
-                            $('#cabecalho nav.menu-cb > ul .running-line-mobile').css('top','152px');
+                            $('#cabecalho nav.menu-cb > ul .running-line-mobile').css('top','137px');
                         }
                         if($('#cabecalho nav.menu-cb.mobile > ul > li').hasClass('quatro activeAnchor')){
-                            $('#cabecalho nav.menu-cb > ul .running-line-mobile').css('top','152px');
+                            $('#cabecalho nav.menu-cb > ul .running-line-mobile').css('top','137px');
                         }
                         if($('#cabecalho nav.menu-cb.mobile > ul > li').hasClass('cinco activeAnchor')){
-                            $('#cabecalho nav.menu-cb > ul .running-line-mobile').css('top','194px');
+                            $('#cabecalho nav.menu-cb > ul .running-line-mobile').css('top','178px');
                         }
                     
 

@@ -61,7 +61,11 @@
         -ms-user-select: none;
         user-select: none;
         overflow: hidden;
+        transition: 0.6s
       }
+      .hamburger.open {
+        transform: scale(0.6);
+      } 
       
       .burger-main {
         position: absolute;
@@ -452,10 +456,14 @@
     #cabecalho .menu-cb.mobile {
       display: none;
         position: absolute;
-        top: 90px;
+        top: 99px;
         background: rgba(12, 12, 12, 0.98);
         width: 100%;
         left: 0;
+    }
+    #cabecalho .menu-cb.mobile > ul {
+      padding-top: 10px;
+      padding-bottom: 9px;
     }
 
     #cabecalho .menu-cb.mobile li {
@@ -503,7 +511,7 @@
     height: 183px;
     position: absolute;
     left: 25px;
-    top: 30px;
+    top: 14px;
     z-index: 1;
     background: rgba(131, 182, 62, 0.22);
     border: 1px solid rgba(136, 136, 136, 0.22);

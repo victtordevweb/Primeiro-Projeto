@@ -2,6 +2,29 @@
     #cabecalho .cronometro .countdown.styled > div:before {
         display: none;
     }
+    .noticias {
+      padding: 0;
+    }
+    .noticias .tabela {
+      width: 100%;
+      margin: 0;
+    }
+    
+    .noticias .tabela .table-row.um li {
+    font-size: 17px;
+    }
+    .noticias .tabela .table-row:not(.um) li {
+      font-size: 14px;
+    } 
+    .noticias .tabela .table-row.um li:first-child, .noticias .tabela .table-row:not(.um) li:first-child {
+      margin-left: 2% !important;
+      width: 30%;
+    }
+    .noticias .tabela .table-row.um li:nth-child(2), .noticias .tabela .table-row li:nth-child(2) {
+      margin-left: 3%;
+      width: 47%;
+      
+}
 }
 @media screen and (max-width: 767px) and (min-width: 651px) {
     #cabecalho .cronometro .countdown.styled > div:not(:first-child) > span {

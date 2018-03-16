@@ -19,12 +19,21 @@
     .noticias .tabela .table-row.um li:first-child, .noticias .tabela .table-row:not(.um) li:first-child {
       margin-left: 2% !important;
       width: 30%;
+      float: left;
     }
     .noticias .tabela .table-row.um li:nth-child(2), .noticias .tabela .table-row li:nth-child(2) {
       margin-left: 3%;
-      width: 47%;
-      
-}
+      width: 47%;   
+    }
+
+    /*/ Sponsor /*/
+    .eventos .items-event > div {
+      display: block;
+      margin-bottom: 36px !important;
+  }
+  .eventos .items-event > div:nth-child(2) {
+    margin: 0;
+  }
 }
 @media screen and (max-width: 767px) and (min-width: 651px) {
     #cabecalho .cronometro .countdown.styled > div:not(:first-child) > span {
@@ -68,6 +77,9 @@
 }
 }
 @media screen and (max-width: 767px) {
+  .pdd-mob {
+    padding: 0 5% !important;
+  }
     /*/=============================== Conteudo Menu Hamburguer ====================================/*/
     .hamburger {
         -webkit-transform: scale(0.75);
@@ -550,7 +562,7 @@
         position: relative;
         z-index: 5;
         margin: 10px 0 !important;
-        width: 140px !important;
+        width: 134px !important;
         font-size: 15px !important;
     }
     /*/ logo mobile /*/
@@ -594,6 +606,47 @@ header#cabecalho .row-fluid.entrar {
 .grid-speakers div {
   padding: 0;
 }
-
-
+.eventos-passados .col-md-12.col-sm-12.col-xs-12.info-past {
+  padding: 0 5%;
 }
+/*/ ====================== /*/
+/*/ Corpo /*/
+#corpo .row-fluid.sign {
+  margin-bottom: -60px;
+}
+#corpo .os-elites {
+  padding: 50px 0 80px 0;
+}
+#corpo p.paddinG, .eventos .info-event > p {
+  padding: 0;
+}
+
+.noticias {
+  margin-bottom: 100px;
+}
+.grid-speakers {
+  margin: 70px 0;
+}
+.grid-speakers .grids, .eventos .items-event {
+  margin-bottom: 60px;
+}
+/*/ Eventos Passados Grid /*/
+.eventos-passados .row-fluid > div {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+
+
+/*/ Footer /*/
+
+.pre-footer .box-rodape {
+  width: 100%;
+  padding: 5%;
+}
+.pre-footer .box-rodape ._content {
+  padding: 0px 10px;
+  margin: 50px 0;
+}
+
+} /*/ Encerra Width até 767 /*/

@@ -147,7 +147,7 @@ section#corpo {
     .withRotation {
         background: #fff;
         transform: rotate(-5deg);
-        margin: -5% -7% 0 -7%;
+        margin: -5% -25% 0 -25%;
             padding-top: 5%;
     }
 }

@@ -1,4 +1,7 @@
 $('document').ready(function () {
+  if(screen.width <= 1199 ) {
+    $('#cabecalho nav.menu-cb > ul .running-line-back').removeClass('running-line-back');
+  }
     if(screen.width <= 767) {
       $('#cabecalho nav.menu-cb > ul .running-line-mobile').addClass('off');
     /*/ =========== Script Manu Hamburguer /*/

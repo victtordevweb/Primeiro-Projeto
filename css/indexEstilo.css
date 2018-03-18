@@ -794,20 +794,49 @@ footer#rodape {
 }
 /*/ botao voltar ao topo /*/
 div#voltar-ao-topo {
-    position: fixed;
+    position: absolute;
     font-size: 54px;
     padding: 0px 10px;
     border-radius: 100%;
-    border: 1px solid #000000;
-    bottom: 45px;
-    right: 104px;
+    bottom: 10px;
+    right: 40px;
     cursor: pointer;
     transition: all 0.2s;
 }
 div#voltar-ao-topo i {
-    display: block;
+	transition: 0.6s;
 }
 
-div#voltar-ao-topo:hover {
-    background: rgba(146, 211, 56, 0.25);
+div#voltar-ao-topo:hover{
+	transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+	animation:up 1s ease infinite 0s;
+	-webkit-animation:up 1s ease infinite 0s;
+	color:#fff;
 }
+div#voltar-ao-topo:hover i {
+	color: #fff;
+}
+@keyframes up{
+	0%{
+		transform:translateY(0)
+	}
+	50%{
+		transform:translateY(-10px)
+	}
+	100%{
+		transform:translateY(0px)
+	}
+}
+@-webkit-keyframes up{
+	0%{
+		-webkit-transform:translateY(0)
+	}
+	50%{
+		transform:translateY(-10px)
+	}
+	100%{
+		-webkit-transform:translateY(0px)
+	}
+}
+

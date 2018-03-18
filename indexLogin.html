@@ -5,8 +5,6 @@
 		<meta name="viewport" content="width:device-width, initial-scale=1">
 		<title>Projeto Real</title>
 		<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
-		<link rel="stylesheet" href="lib/owl.carousel2/dist/assets/owl.carousel.min.css">
-		<link rel="stylesheet" href="lib/owl.carousel2/dist/assets/owl.theme.default.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="css/indexLogin.css">
 
@@ -15,13 +13,14 @@
 <body id="bodyLogin">
 
 	<section>
+	<div class="wrapp-btns">
 		<div class="col-md-6">
-			<a href="file:///C:/Users/ToSemNome/Desktop/Web%20Developer%20The%20student/ProjetoReal/index.html?" target="_blank" class="voltar">Voltar para Home</a>
+			<a href="index.html" target="_blank" class="voltar">Voltar para Home</a>
 		</div>
 		<div class="col-md-6">
 			<button class="cdtr">Crie sua Conta</button>
 		</div>
-
+	</div>
 		<div class="box-login-center">
 		
 			<div class="box">
@@ -38,7 +37,7 @@
 				    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="******">
 				  </div>
 				  <div class="col-md-12 items">
-					  <button type="submit" class="btn btn-primary submit">Entrar</button>
+					  <input type="submit" class="btn btn-primary submit entrar" value="Entrar" id="entrar">
 					  <a href="#" class="esqueceu-senha">Esqueçeu sua senha?</a>
 				  </div>
 				</form>
@@ -50,25 +49,25 @@
 								<div class="logo-login text-center">
 						<img src="imagens/logo/logo-envato.png" title="Envato">
 					</div>
-				<form>
+				<form action="" method="POST" id="form-cadastro">
 				  <div class="form-group">
-				    <input type="text" class="form-control" id="exampleInputName1" aria-describedby="NameHelp" placeholder="Nome Completo : ">
+				    <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome Completo : ">
 				  </div>
 				  <div class="form-group">
-				    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu Email : ">
+				    <input type="text" class="form-control" id="email" name="email" placeholder="Seu Email : ">
 				  </div>
 				  <div class="form-group">
-				    <input type="text" class="form-control" id="exampleInputUser1" aria-describedby="UserHelp" placeholder="Nome de Usuário : ">
+				    <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Nome de Usuário : ">
 				  </div>
 				  <div class="form-group">
-				    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Sua Senha : ">
+				    <input type="password" class="form-control" id="senha" name="senha" placeholder="Sua Senha : ">
 				  </div>
 				  <div class="form-group">
-				    <input type="text" class="form-control" id="exampleInputNumber1" aria-describedby="NumberHelp" placeholder="Seu Telefone : ">
+				    <input type="text" class="form-control" id="telefone" name="telefone" placeholder="Seu Telefone : ">
 				  </div>
 
 				  <div class="col-md-12 items">
-					  <button type="submit" class="btn btn-primary submit">Cadastrar</button>
+					  <input type="submit" value="Cadastrar" class="btn btn-primary submit cadastrar" id="cadastrar">
 				  </div>
 
 				</form>
@@ -83,7 +82,6 @@
 
 
     <script src="lib/jquery/jquery.min.js"></script>
-	<script src="lib/owl.carousel2/dist/owl.carousel.min.js"></script>
 	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
 	<script src="js/scriptlogin.js"></script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>

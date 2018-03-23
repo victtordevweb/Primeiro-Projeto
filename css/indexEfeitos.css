@@ -32,6 +32,7 @@
     z-index: -6;
     background: rgb(52, 64, 36);
     border: 1px solid rgba(46, 49, 41, 0.56);
+    display: none;
     
 }
 #cabecalho nav.menu-cb > ul .running-line.off {

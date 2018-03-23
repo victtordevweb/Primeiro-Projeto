@@ -59,7 +59,7 @@ $(document).ready(function(){
 	});
 
 
-	   $('.btn-cadastro').click(function(){
+	   $('.btn-cadastro, .box-login-center .box form .items #cadastrar').click(function(){
 	     localStorage.setItem('formCadastro', 'true');
         });
 

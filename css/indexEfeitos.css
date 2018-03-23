@@ -24,14 +24,14 @@
 	display: block !important;
 }
 #cabecalho nav.menu-cb > ul .running-line-back {
-    width: 91%;
+   /* width: 91%;
     height: 2px;
     position: absolute;
     left: 45px;
     top: 12px;
     z-index: -6;
     background: rgb(52, 64, 36);
-    border: 1px solid rgba(46, 49, 41, 0.56);
+    border: 1px solid rgba(46, 49, 41, 0.56);*/
     display: none;
     
 }

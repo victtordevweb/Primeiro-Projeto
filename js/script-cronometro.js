@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-        var endDate = "march 12, 2019 20:00:00";
+        var endDate = "april 12, 2018 20:00:00";
  
         $('.countdown.simple').countdown({ date: endDate });
  

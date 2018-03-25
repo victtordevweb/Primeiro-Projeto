@@ -173,9 +173,14 @@ body#bodyLogin {
 	opacity: 0 !important;
 }
 .WrappActions {
-    height: 800px;
+    height: 750px;
     width: 100%;
     overflow: hidden;
+   transition: all 0.9s;
+}
+.dropped-box .WrappActions {
+    height: 930px;
+    
 }
 /*.dropped-box .WrappActions {
         height: 800px !important;

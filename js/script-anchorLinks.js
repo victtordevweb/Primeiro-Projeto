@@ -24,7 +24,7 @@ $(document).ready(function(){
 
  
 
-            if( sectionOffset <= scrollPosition ){
+           if( sectionOffset <= scrollPosition ){
           $('#cabecalho nav.menu-cb > ul .running-line').removeClass('off');
 
                 $(this).parent().addClass('activeAnchor');
@@ -41,7 +41,7 @@ $(document).ready(function(){
 
                   /* if(scrollPosition < 767 ){  */       
                 
-                        if($('#cabecalho nav.menu-cb.mobile > ul > li').hasClass('um activeAnchor')){
+                     /*   if($('#cabecalho nav.menu-cb.mobile > ul > li').hasClass('um activeAnchor')){
                             $('#cabecalho nav.menu-cb > ul .running-line-mobile').removeClass('off');
                             $('#cabecalho nav.menu-cb > ul .running-line-mobile').css('top','14px');
                         }
@@ -54,17 +54,31 @@ $(document).ready(function(){
                         if($('#cabecalho nav.menu-cb.mobile > ul > li').hasClass('quatro activeAnchor')){
                             $('#cabecalho nav.menu-cb > ul .running-line-mobile').css('top','137px');
                         }
-                        if($('#cabecalho nav.menu-cb.mobile > ul > li').hasClass('quatro activeAnchor')){
-                            $('#cabecalho nav.menu-cb > ul .running-line-mobile').css('top','137px');
-                        }
                         if($('#cabecalho nav.menu-cb.mobile > ul > li').hasClass('cinco activeAnchor')){
                             $('#cabecalho nav.menu-cb > ul .running-line-mobile').css('top','178px');
+                        }*/
+                        var seletorLI = "#cabecalho nav.menu-cb.mobile > ul > li";
+                        var seletorRunLineMob = "#cabecalho nav.menu-cb > ul .running-line-mobile";
+                        var classLI = {
+                            'um':'14px',
+                            'dois':'55px',
+                            'tres':'96px',
+                            'quatro':'137px',
+                            'cinco':'178px'
                         }
-                    
+                        
+                        for (var chave in classLI) {
+                            if ($(seletorLI).hasClass(chave+' activeAnchor')) {
+                                if($(seletorLI).hasClass('um activeAnchor')){
+                                    $(seletorRunLineMob).removeClass('off');
+                                }
+                                $(seletorRunLineMob).css('top', classLI[chave]);
+                            }
 
+                        }
                        /*    }*/
                         
-            }
+                            }
 
  
     

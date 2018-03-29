@@ -76,6 +76,18 @@
   left: 49px !important;
 }
 }
+
+
+@media screen and (max-width: 991px) {
+  #bodyLogin .box-login-center .box form {
+    padding: 11% 9% 1% !important;
+}
+
+#bodyLogin .box-login-center.cadastro .box form .items {
+  margin-bottom: 30px;
+}
+
+}
 @media screen and (max-width: 767px) {
   .pdd-mob {
     padding: 0 5% !important;
@@ -491,7 +503,7 @@
     #cabecalho .menu-cb.mobile {
       display: none;
         position: absolute;
-        top: 99px;
+        top: 98px;
         background: rgba(12, 12, 12, 0.98);
         width: 100%;
         left: 0;

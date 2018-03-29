@@ -65,7 +65,7 @@ body#bodyLogin {
 
 #bodyLogin .box-login-center .box form {
 	background: #fff;
-    padding: 11% 9% 27%;
+    padding: 11% 9% 29%;
 
 }
 #bodyLogin .box-login-center .box .logo-login.text-center {
@@ -147,12 +147,13 @@ body#bodyLogin {
 /*/ Cadastro /*/
 
 #bodyLogin .box-login-center.cadastro .box form {
-    padding: 8% 9% 27%;
+    padding: 8% 9% 23%;
 }
 
 #bodyLogin .box-login-center.cadastro .box form .items {
-    margin-top: 17px;
+    margin-top: 0px;
 }
+
 #bodyLogin .box-login-center.cadastro .box form .submit {
     padding: 15px 40px;
     font-size: 18px;

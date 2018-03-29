@@ -1,4 +1,11 @@
 $(document).ready(function(){
+	 setTimeout(function(){
+		 $('body').addClass('active-modal');
+	 }, 1000);
+	 $('#close-modal').click(function(){
+		$('body').removeClass('active-modal');
+	});
+
 	if(screen.width >= 767){
 
 	 $(window).scroll(function(){
@@ -61,7 +68,9 @@ $(document).ready(function(){
 
 	   $('.btn-cadastro, .box-login-center .box form .items #cadastrar').click(function(){
 	     localStorage.setItem('formCadastro', 'true');
-        });
+		});
+		
+
 
 
 });
